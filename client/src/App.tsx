@@ -8,26 +8,6 @@ function App() {
 
   return (<>
     <div className='App'>
-      <div className="search">
-        <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
-        {
-          Data.filter(post => {
-            if (query === "") {
-              return;
-            } else if (post.id.toLowerCase().includes(query.toLowerCase())) {
-              return post;
-            }
-            else {
-              return;
-            }
-          }).map((post, index) => {
-            return <div className='box' key={index}>
-              <p>{post.id}</p>
-              <p>{post.symbol}</p>
-            </div>
-          })
-        }
-      </div>
     </div>
   </>
   )
