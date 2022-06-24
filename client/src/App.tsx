@@ -30,13 +30,7 @@ const App = () => {
 
         }} >
         {
-          Data.filter(post => {
-            if (query === '') {
-              return;
-            } else if (post.name.toLowerCase().includes(query.toLowerCase())) {
-              return post;
-            }
-          }).map((data, key) => {
+          Data.map((data, key) => {
             return <ListItem key={key}>
               <ListItemAvatar>
                 <Avatar>
