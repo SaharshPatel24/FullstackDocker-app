@@ -4,7 +4,7 @@ import "./card.css"
 
 
 const CoinCard = () => {
-    const Data = { "id": "bitcoin", "symbol": "btc", "name": "Bitcoin", "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", "current_price": "21232", "timestamp": "2022-06-24T03:20:16.264Z" };
+    const Data: Coin = { "id": "bitcoin", "symbol": "btc", "name": "Bitcoin", "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", "current_price": "21232", "timestamp": "2022-06-24T03:20:16.264Z" };
 
     return (
         <div className="card">
