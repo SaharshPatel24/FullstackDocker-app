@@ -4,34 +4,23 @@ import "./card.css"
 
 
 const CoinCard = () => {
+    const Data = { "id": "bitcoin", "symbol": "btc", "name": "Bitcoin", "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", "current_price": "21232", "timestamp": "2022-06-24T03:20:16.264Z" };
+
     return (
         <div className="card">
             <div className="container">
                 <div className="card">
                     <div className="imgBx">
-                        <img src="http://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png" alt="nike-air-shoe" />
+                        <img src={Data.image} alt={Data.id} />
                     </div>
 
                     <div className="contentBx">
 
-                        <h2>Nike Shoes</h2>
+                        <h2>{Data.name}</h2>
 
                         <div className="size">
-                            <h3>Size :</h3>
-                            <span>7</span>
-                            <span>8</span>
-                            <span>9</span>
-                            <span>10</span>
+                            {Data.current_price}
                         </div>
-
-                        <div className="color">
-
-                            <h3>Color :</h3>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#">Buy Now</a>
                     </div>
 
                 </div>
