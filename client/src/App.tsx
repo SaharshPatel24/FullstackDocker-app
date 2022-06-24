@@ -8,6 +8,11 @@ function App() {
 
   return (<>
     <div className='App'>
+      <form className="form-search" method="get" action="#">
+        <input type="search" name="search" onChange={event => setQuery(event.target.value)} placeholder="search your book here for.." />
+        <button type="submit">Search</button>
+      </form>
+
     </div>
   </>
   )
