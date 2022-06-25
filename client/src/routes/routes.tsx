@@ -8,10 +8,8 @@ const AppRoutes = () => {
         <Routes>
             <Route path="/" element={<IndexPage />} />
             <Route
-                path="/coin"
-                element={
-                    <CoinCard />
-                }
+                path="coin/:id"
+                element={<CoinCard />}
             />
         </Routes>
     )
